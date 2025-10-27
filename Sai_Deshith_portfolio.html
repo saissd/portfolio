@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Deshith Sandakacharla | AI Engineer Portfolio</title>
+    <!-- Load Tailwind CSS CDN for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Inter font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styling for a dark, professional theme */
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #0d1317; /* Very dark background for high contrast */
+        }
+        /* Style for better focus and interaction */
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 20px -5px rgba(0, 0, 0, 0.2), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+        /* Updated Accent Color to Cyan/Teal (Matches the provided UI image tone) */
+        .accent-color {
+            color: #2DD4BF; /* Cyan 400 */
+        }
+        .bg-accent {
+            background-color: #2DD4BF;
+        }
+        .border-accent {
+            border-color: #2DD4BF;
+        }
+        /* Custom darker, slightly blue background for contact cards */
+        .contact-card-bg {
+            background-color: #1a2328;
+        }
+    </style>
+</head>
+<body class="bg-[#0d1317] text-gray-100">
+
+    <!-- Sticky Navigation Header -->
+    <header class="sticky top-0 z-50 bg-[#0d1317]/95 backdrop-blur-sm shadow-xl">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center max-w-7xl">
+            <!-- Full Name Displayed Here -->
+            <a href="#about" class="text-2xl font-bold accent-color hover:text-cyan-300 transition duration-300">Sai Deshith Sandakacharla</a>
+            <div class="space-x-4 md:space-x-8 text-sm md:text-base">
+                <a href="#about" class="hover:text-cyan-400 transition duration-300" >About</a>
+                <a href="#education" class="hover:text-cyan-400 transition duration-300">Education</a>
+                <a href="#experience" class="hover:text-cyan-400 transition duration-300">Experience</a>
+                <a href="#projects" class="hover:text-cyan-400 transition duration-300">Projects</a>
+                <a href="#skills" class="hover:text-cyan-400 transition duration-300">Skills</a>
+                <a href="#publications" class="hover:text-cyan-400 transition duration-300">Pubs</a>
+                <a href="#contact" class="hover:text-cyan-400 transition duration-300">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-8 max-w-7xl">
+
+        <!-- 1. Hero / About Section -->
+        <section id="about" class="min-h-screen pt-20 flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-12">
+            <div class="md:w-1/3 flex justify-center">
+                <!-- Profile Image Placeholder -->
+                <img src="E:\portfolio\myphotos\portfolio_photo.png"
+                     alt="Sai Deshith Sandakacharla Profile Picture"
+                     class="w-100 h-100 rounded-full mx-auto shadow-2xl overflow-hidden border-4 border-gray-600">
+            </div>
+            <div class="md:w-2/3 text-center md:text-left">
+                <p class="text-xl text-cyan-400 mb-2">Hello, I'm</p>
+                <h1 class="text-5xl md:text-7xl font-extrabold mb-4 leading-tight">Sai Deshith <span class="accent-color">Sandakacharla</span></h1>
+                <h2 class="text-2xl md:text-3xl font-light text-gray-400 mb-6">AI Engineer & Machine Learning Specialist</h2>
+                <p class="text-lg text-gray-300 max-w-xl mx-auto md:mx-0">
+                    I am a Master's student in Artificial Intelligence at SUNY Buffalo, specializing in developing and deploying scalable Machine Learning and AI solutions. My expertise spans multimodal LLMs, RAG pipeline optimization (PyTorch, JAX, FAISS), compiler development, and building robust, real-time data and ML systems on AWS/Azure. I am driven by the goal of optimizing performance, reducing latency, and aligning AI systems with responsible principles.
+                </p>
+                <a href="#contact" class="mt-8 inline-block bg-cyan-600 text-white font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-cyan-500 transition duration-300 transform hover:-translate-y-1">
+                    Get In Touch
+                </a>
+            </div>
+        </section>
+
+        <!-- 2. Education Section -->
+        <section id="education" class="py-20 border-t border-gray-800">
+            <h2 class="text-4xl font-bold mb-12 text-center text-white">Education & Coursework</h2>
+            <div class="max-w-4xl mx-auto space-y-10">
+
+                <!-- SUNY Buffalo Degree Card (Combined with Coursework) -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-xl transition duration-300 card-hover border-l-4 border-cyan-500">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-2xl font-semibold accent-color">Master of Science in Artificial Intelligence</h3>
+                        <span class="text-lg font-medium text-gray-400">Expected December 2025</span>
+                    </div>
+                    <p class="text-gray-300 mb-4">State University of New York at Buffalo, Buffalo, NY</p>
+                    
+                    <!-- Master's Coursework -->
+                    <h4 class="text-xl font-semibold text-cyan-400 mb-3 pt-4 border-t border-gray-700 mt-4">Relevant Coursework</h4>
+                    <div class="text-gray-300 grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-2 text-sm">
+                        <span>• Artificial Intelligence</span>
+                        <span>• Machine Learning</span>
+                        <span>• Natural Language Processing</span>
+                        <span>• Reinforcement Learning</span>
+                        <span>• Applied ML</span>
+                        <span>• Data Intensive Computing</span>
+                        <span>• Pattern Recognition</span>
+                    </div>
+                </div>
+
+                <!-- VTU Degree Card (Combined with Coursework) -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-xl transition duration-300 card-hover border-l-4 border-cyan-500">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-2xl font-semibold accent-color">Bachelor of Engineering in AI & Machine Learning</h3>
+                        <span class="text-lg font-medium text-gray-400">August 2019 - May 2023</span>
+                    </div>
+                    <p class="text-gray-300 mb-4">Visvesvaraya Technological University, India</p>
+
+                    <!-- Bachelor's Coursework -->
+                    <h4 class="text-xl font-semibold text-cyan-400 mb-3 pt-4 border-t border-gray-700 mt-4">Relevant Coursework & Core Concepts</h4>
+                    <div class="text-gray-300 grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-2 text-sm">
+                        <span>• C programming</span>
+                        <span>• Mathemetics(calculus,linear algebra)</span>
+                        <span>• Datastructures and applications</span>
+                        <span>• Software engineering</span>
+                        <span>• Data structures</span>
+                        <span>• Probability and Statistics</span>
+                        <span>• Data communication</span>
+                        <span>• Design and analysis of algorithmss</span>
+                        <span>• Python programming</span>
+                        <span>• Database management systems</span>
+                        <span>• Artificial intelligence</span>
+                        <span>• Machine learning </span>
+                        <span>• Deep learning</span>
+                        <span>• Digital image processing</span>
+                        <span>• Computer visiong</span>
+                        <span>• Data science</span>
+                        <span>• Mobile application development</span>
+                        <span>• Block chain technology</span>
+                        <span>• Neural networks and deep learning</span>
+                        <span>• Robotic process application</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Professional Experience Section -->
+        <section id="experience" class="py-20 border-t border-gray-800">
+            <h2 class="text-4xl font-bold mb-12 text-center text-white">Professional Experience</h2>
+
+            <div class="max-w-4xl mx-auto space-y-12">
+
+                <!-- Role 1: Software Engineer Intern - AI_ML, PM Accelerator -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-xl transition duration-300 card-hover border-l-4 border-cyan-500">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-2xl font-semibold accent-color">Software Engineer Intern - AI_ML</h3>
+                        <span class="text-lg font-medium text-gray-400">September 2025 - Present</span>
+                    </div>
+                    <p class="text-gray-300 mb-4 text-lg">PM Accelerator, Florida, United States</p>
+                    <ul class="list-disc list-outside ml-5 space-y-2 text-gray-300 text-sm">
+                        <li>Develop an AI-driven trust and compliance evaluation platform using multimodal LLMs and real-time analytics to assess reliability and reduce potential fraud.</li>
+                        <li>Architected and optimized RAG and model inference pipelines using PyTorch, TensorFlow, JAX, FAISS, using Python to improve precision and reducing latency by 15%.</li>
+                        <li>Implemented Resource Scheduling algorithms and Compute Graph Optimization to optimize model training and inference, reducing costs by 18%.</li>
+                        <li>Led a cross-functional team of data scientists interns and engineer interns to streamline API pipelines for large-scale text and metadata ingestion, reducing latency by 20% and improving scalability.</li>
+                        <li>Design transparency and fairness benchmarks to align AI model evaluation with responsible AI principles and measurable trust metrics.</li>
+                    </ul>
+                </div>
+
+                <!-- Role 2: Associate System Engineer (UPDATED) -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-xl transition duration-300 card-hover border-l-4 border-cyan-500">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-2xl font-semibold accent-color">Associate System Engineer</h3>
+                        <span class="text-lg font-medium text-gray-400">May 2023 - July 2024</span>
+                    </div>
+                    <p class="text-gray-300 mb-4 text-lg">IN TECHNET LIMITED, Hyderabad</p>
+                    <ul class="list-disc list-outside ml-5 space-y-2 text-gray-300 text-sm">
+                        <li>Productionized models with MLflow registry, FastAPI inference, Docker/Kubernetes, and GitHub Actions/Terraform CI/CD; added A/B tests (precision/recall/ROC-AUC) and Prometheus/Grafana monitoring for safe rollouts.</li>
+                        <li>Built real-time anomaly detection and system-health monitoring APIs on AWS (Athena, Lambda, Glue) using Python and C++ for managing production servers, reducing false positives 20% and improving system performance.</li>
+                        <li>Collaborated with cross-functional teams to analyze telemetry and kernel-level network metrics, enabling data-driven debugging, improving uptime 15%.</li>
+                        <li>Developed and tested RESTful APIs for model deployment and data processing (Python, C++), enhancing efficiency 20% and reducing operational costs 10%.</li>
+                        <li>Transitioned from compiler optimizations (LLVM, C++) to building scalable data pipelines and applying Software Engineering and Data Science principles for ML pipeline optimization.</li>
+                    </ul>
+                </div>
+
+                <!-- Role 3: Software Engineer (Intern) (NEW) -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-xl transition duration-300 card-hover border-l-4 border-cyan-500">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-2xl font-semibold accent-color">Software Engineer (Intern)</h3>
+                        <span class="text-lg font-medium text-gray-400">September 2022 - April 2023</span>
+                    </div>
+                    <p class="text-gray-300 mb-4 text-lg">IN TECHNET LIMITED, Hyderabad</p>
+                    <ul class="list-disc list-outside ml-5 space-y-2 text-gray-300 text-sm">
+                        <li>Participated in code reviews, ensuring adherence to coding standards and improving code reliability by 15%.</li>
+                        <li>Developed and tested REST APIs for scalable model deployment (Python, C++), reducing manual deployment time by 25%.</li>
+                        <li>Used Prometheus and Grafana for telemetry collection and performance monitoring, improving observability and reliability.</li>
+                        <li>Designed and implemented hardware integration tests, improving system stability 12%.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 4. Projects Section (UPDATED WITH NEW ACADEMIC PROJECTS) -->
+        <section id="projects" class="py-20 border-t border-gray-800">
+            <h2 class="text-4xl font-bold mb-12 text-center text-white">My Projects</h2>
+
+            <div class="max-w-4xl mx-auto space-y-8">
+
+                <!-- Project Card 1: Azure Cloud AI Evaluation Pipeline -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-xl transition duration-300 card-hover border-l-4 border-cyan-500">
+                    <h3 class="text-2xl font-semibold mb-3 accent-color">Azure Cloud AI Evaluation Pipeline</h3>
+                    <p class="text-gray-400 mb-4 text-sm">Tech Stack: Azure Functions, Service Bus, FastAPI, Terraform, GitHub Actions, Docker, MLflow.</p>
+                    <ul class="list-disc list-outside ml-5 space-y-2 text-gray-300 text-sm">
+                        <li>Built an event-driven AI evaluation system on Microsoft Azure using Functions, Service Bus, and FastAPI for asynchronous model validation and telemetry tracking.</li>
+                        <li>Automated CI/CD with Terraform and GitHub Actions to ensure scalable, Responsible AI–aligned deployments supporting networking workloads.</li>
+                    </ul>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="https://github.com/saissd/azure-cloud-ai-eval-pipeline" class="text-cyan-400 hover:text-cyan-300 transition duration-300 font-medium">View Project →</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 2: MediChatRAG-Multilingual Healthcare Chatbot -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-xl transition duration-300 card-hover border-l-4 border-cyan-500">
+                    <h3 class="text-2xl font-semibold mb-3 accent-color">MediChatRAG-Multilingual Healthcare Chatbot</h3>
+                    <p class="text-gray-400 mb-4 text-sm">Tech Stack: PyTorch, FSDP, DDP, AMP, Quantization, Docker, Python.</p>
+                    <ul class="list-disc list-outside ml-5 space-y-2 text-gray-300 text-sm">
+                         <li>Implemented a RAG-based multilingual chatbot with domain-specific LoRA fine-tuning for retrieval accuracy (+15%) and latency ( –18%).</li>
+                         <li>Applied Responsible AI metrics for fairness and interpretability. Integrated streaming APIs and caching to support multi-user conversations and real-time translation, improving scalability and response speed by 22%.</li>
+                    </ul>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="https://github.com/saissd/MediChatRAG-Multilingual-Healthcare-Chatbot-with-RAG-Evaluation " class="text-cyan-400 hover:text-cyan-300 transition duration-300 font-medium">View Project →</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 3: Distributed-ML-Training-Inference-Optimization -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-xl transition duration-300 card-hover border-l-4 border-cyan-500">
+                    <h3 class="text-2xl font-semibold mb-3 accent-color">Distributed-ML-Training-Inference-Optimization</h3>
+                    <p class="text-gray-400 mb-4 text-sm">Tech Stack: PyTorch, FSDP, DDP, AMP, Quantization, Docker, Python.</p>
+                    <ul class="list-disc list-outside ml-5 space-y-2 text-gray-300 text-sm">
+                        <li>Developed distributed ML training and inference system (PyTorch DDP/FSDP, AMP) to boost training throughput 35%.</li>
+                        <li>Benchmarked AWS/Azure environments for scalability, debugging, and hardware resource optimization. Deployed profiling tools to analyze GPU utilization, network throughput, and communication overhead, achieving a 20% reduction in inter-node latency during model training.</li>
+                    </ul>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="https://github.com/saissd/Distributed-ML-Training-Inference-Optimization" class="text-cyan-400 hover:text-cyan-300 transition duration-300 font-medium">View Project →</a>
+                    </div>
+                </div>
+                
+                <!-- Project Card 4: LLM-Powered YouTube Audio Summarizer|Tech Stack: -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-xl transition duration-300 card-hover border-l-4 border-cyan-500">
+                    <h3 class="text-2xl font-semibold mb-3 accent-color">LLM-Powered YouTube Audio Summarizer</h3>
+                    <p class="text-gray-400 mb-4 text-sm">Tech Stack: Whisper, Transformers, Hugging Face, Streamlit, Python.</p>
+                    <ul class="list-disc list-outside ml-5 space-y-2 text-gray-300 text-sm">
+                        <li>Designed a speech-to-text pipeline using Whisper for YouTube audio/video and integrated Transformers for LLM-based</li>
+                        <li>Developed and deployed an interactive Streamlit app for real-time summarization and Q&A with text and subtitle exports, boosting user engagement by 20% through personalized recommendation insights.</li>
+                    </ul>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="https://github.com/saissd/Distributed-ML-Training-Inference-Optimization" class="text-cyan-400 hover:text-cyan-300 transition duration-300 font-medium">View Project →</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 5: Movie-Recommendation-System-with-Analytics -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-xl transition duration-300 card-hover border-l-4 border-cyan-500">
+                    <h3 class="text-2xl font-semibold mb-3 accent-color">Movie-Recommendation-System-with-Analytics</h3>
+                    <p class="text-gray-400 mb-4 text-sm">Tech Stack:Python, Streamlit, FAISS, SentenceTransformers, Docker, Power BI</p>
+                    <ul class="list-disc list-outside ml-5 space-y-2 text-gray-300 text-sm">
+                        <li>End-to-end Movie Recommendation Engine with real-time monitoring dashboard, built using FAISS, SentenceTransformers, LightGBM, Prometheus, Grafana, and Docker for production-grade MLOps deployment.</li>
+                    </ul>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="https://github.com/saissd/Movie-Recommendation-System-with-Analytics" class="text-cyan-400 hover:text-cyan-300 transition duration-300 font-medium">View Project →</a>
+                    </div>
+                </div>
+
+                 <!-- Project Card 6: Scalable Search Query Optimizer and Ranker -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-xl transition duration-300 card-hover border-l-4 border-cyan-500">
+                    <h3 class="text-2xl font-semibold mb-3 accent-color">Scalable Search Query Optimizer and Ranker</h3>
+                    <p class="text-gray-400 mb-4 text-sm">Tech Stack:</p>
+                    <ul class="list-disc list-outside ml-5 space-y-2 text-gray-300 text-sm">
+                        <li>Pipeline for query rewriting, feature extraction, and learning-to-rank to boost relevance.</li>
+                        <li>Modular evaluators (A/B, offline metrics) and hooks for rapid synonym/boost experiments.</li>
+                    </ul>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="https://github.com/saissd/Scalable-Search-Query-Optimizer-and-Ranker" class="text-cyan-400 hover:text-cyan-300 transition duration-300 font-medium">View Project →</a>
+                    </div>
+                </div>
+
+                 <!-- Project Card 7: Internal Fintech Agent (RAG) -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-xl transition duration-300 card-hover border-l-4 border-cyan-500">
+                    <h3 class="text-2xl font-semibold mb-3 accent-color">Internal Fintech Agent (RAG)</h3>
+                    <p class="text-gray-400 mb-4 text-sm">Tech Stack:</p>
+                    <ul class="list-disc list-outside ml-5 space-y-2 text-gray-300 text-sm">
+                        <li>FAISS-backed retrieval, clean chunking, and evaluation harness to improve answer quality and latency.</li>
+                        <li>Pluggable ingestion, caching, and metrics so new docs/models can be A/B tested quickly.</li>
+                    </ul>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="https://github.com/saissd/Internal-Fintech-Agent" class="text-cyan-400 hover:text-cyan-300 transition duration-300 font-medium">View Project →</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 8: Clickstream Data Processing with Spark -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-xl transition duration-300 card-hover border-l-4 border-cyan-500">
+                    <h3 class="text-2xl font-semibold mb-3 accent-color">Clickstream Data Processing with Spark link</h3>
+                    <p class="text-gray-400 mb-4 text-sm">Tech Stack:</p>
+                    <ul class="list-disc list-outside ml-5 space-y-2 text-gray-300 text-sm">
+                        <li>End-to-end Spark pipeline built to match the Wiland, Inc. Data Engineer JD. It processes the Instacart Online Grocery Basket dataset (3M+ orders) into Bronze → Silver → Gold layers and writes business KPIs ready for analytics.</li>
+                    </ul>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="https://github.com/saissd/Clickstream-Data-Processing-with-Spark" class="text-cyan-400 hover:text-cyan-300 transition duration-300 font-medium">View Project →</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 9: AstraFactory link -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-xl transition duration-300 card-hover border-l-4 border-cyan-500">
+                    <h3 class="text-2xl font-semibold mb-3 accent-color">AstraFactory link</h3>
+                    <p class="text-gray-400 mb-4 text-sm">Tech Stack:</p>
+                    <ul class="list-disc list-outside ml-5 space-y-2 text-gray-300 text-sm">
+                        <li>Ingestion → training → FastAPI serving → ONNX edge export → monitoring in one template.</li> 
+                        <li>CI-ready structure with configs, tests, and dashboards to accelerate ML app delivery.</li>
+                    </ul>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="https://github.com/saissd/AstraFactory-End-to-End-HPE-aligned" class="text-cyan-400 hover:text-cyan-300 transition duration-300 font-medium">View Project →</a>
+                    </div>
+                </div>
+
+                <!-- More Projects Link -->
+            <!-- More Projects Button -->
+            <div class="mt-12 text-center">
+                <a href="https://github.com/saissd" target="_blank" class="inline-flex items-center space-x-2 bg-gray-700 text-white px-8 py-3 rounded-lg font-bold hover:bg-accent hover:text-primary-dark transition duration-300 shadow-xl transform hover:scale-105">
+                    <!-- GitHub Icon (Inline SVG) -->
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.799 8.205 11.385.6.11.82-.258.82-.577 0-.28-.01-1.018-.016-2.004-3.338.724-4.043-1.61-4.043-1.61C4.347 18.23 3.5 17.76 3.5 17.76c-1.087-.745.084-.73.084-.73 1.206.084 1.838 1.238 1.838 1.238 1.07 1.835 2.809 1.305 3.49.998.108-.776.419-1.305.762-1.605-2.665-.304-5.466-1.334-5.466-5.93 0-1.309.467-2.383 1.238-3.224-.124-.304-.537-1.524.117-3.176 0 0 1.009-.323 3.301 1.234.96-.266 1.98-.399 3-.399 1.02 0 2.04.133 3 .399 2.292-1.557 3.3-1.234 3.3-1.234.654 1.652.241 2.872.118 3.176.77.84 1.237 1.915 1.237 3.224 0 4.609-2.805 5.621-5.476 5.92-.42.362-.802 1.096-.802 2.219 0 1.604-.015 2.896-.015 3.286 0 .32.215.69.825.575C20.565 21.795 24 17.3 24 12c0-6.627-5.373-12-12-12z" clip-rule="evenodd"/></svg>
+                    <span>See All My Projects on GitHub</span>
+                </a>
+            </div>
+
+            </div>
+        </section>
+
+        <!-- 5. Technical Skills Section (REPLACED WITH NEW, DETAILED LIST) -->
+        <section id="skills" class="py-20 border-t border-gray-800">
+            <h2 class="text-4xl font-bold mb-12 text-center text-white">Technical Skills</h2>
+
+            <div class="max-w-5xl mx-auto bg-gray-800 p-8 rounded-xl shadow-2xl">
+                
+                <!-- Skill Category 1: Programming & Languages -->
+                <h3 class="text-xl font-semibold mb-4 text-cyan-400">Programming & Languages</h3>
+                <div class="flex flex-wrap gap-3 mb-8">
+                    <span class="bg-gray-700 text-sm font-medium px-4 py-2 rounded-full hover:bg-cyan-700 transition duration-300">Python</span>
+                    <span class="bg-gray-700 text-sm font-medium px-4 py-2 rounded-full hover:bg-cyan-700 transition duration-300">C++</span>
+                    <span class="bg-gray-700 text-sm font-medium px-4 py-2 rounded-full hover:bg-cyan-700 transition duration-300">Java</span>
+                    <span class="bg-gray-700 text-sm font-medium px-4 py-2 rounded-full hover:bg-cyan-700 transition duration-300">C#</span>
+                    <span class="bg-gray-700 text-sm font-medium px-4 py-2 rounded-full hover:bg-cyan-700 transition duration-300">JavaScript</span>
+                    <span class="bg-gray-700 text-sm font-medium px-4 py-2 rounded-full hover:bg-cyan-700 transition duration-300">SQL</span>
+                    <span class="bg-gray-700 text-sm font-medium px-4 py-2 rounded-full hover:bg-cyan-700 transition duration-300">R</span>
+                    <span class="bg-gray-700 text-sm font-medium px-4 py-2 rounded-full hover:bg-cyan-700 transition duration-300">MATLAB</span>
+                    <span class="bg-gray-700 text-sm font-medium px-4 py-2 rounded-full hover:bg-cyan-700 transition duration-300">SAS</span>
+                    <span class="bg-gray-700 text-sm font-medium px-4 py-2 rounded-full hover:bg-cyan-700 transition duration-300">VBA</span>
+                    <span class="bg-gray-700 text-sm font-medium px-4 py-2 rounded-full hover:bg-cyan-700 transition duration-300">HTML / CSS</span>
+                    <span class="bg-gray-700 text-sm font-medium px-4 py-2 rounded-full hover:bg-cyan-700 transition duration-300">OOP Principles</span>
+                </div>
+
+                <!-- Skill Category 2: Machine Learning & AI -->
+                <h3 class="text-xl font-semibold mb-4 text-cyan-400">Machine Learning & AI</h3>
+                <div class="flex flex-wrap gap-3 mb-8">
+                    <span class="bg-gray-700 text-sm font-medium px-4 py-2 rounded-full hover:bg-cyan-700 transition duration-300">Deep Learning / Transformers</span>
+                    <span class="bg-gray-700 text-sm font-medium px-4 py-2 rounded-full hover:bg-cyan-700 transition duration-300">LLMs / RAG / Prompt Engineering</span>
+                    <span class="bg-gray-700 text-sm font-medium px-4 py-2 rounded-full hover:bg-cyan-700 transition duration-300">PyTorch / TensorFlow / JAX</span>
+                    <span class="bg-gray-700 text-sm font-medium px-4 py-2 rounded-full hover:bg-cyan-700 transition duration-300">Scikit-learn / XGBoost / LightGBM</span>
+                    <span class="bg-gray-700 text-sm font-medium px-4 py-2 rounded-full hover:bg-cyan-700 transition duration-300">ONNX / CUDA</span>
+                </div>
+                
+                <!-- Skill Category 3: Data Science & Analytics -->
+                <h3 class="text-xl font-semibold mb-4 text-cyan-400">Data Science & Analytics</h3>
+                <div class="flex flex-wrap gap-3 mb-8">
+                    <span class="bg-gray-700 text-sm font-medium px-4 py-2 rounded-full hover:bg-cyan-700 transition duration-300">Data Science / Statistics / Mathematics</span>
+                    <span class="bg-gray-700 text-sm font-medium px-4 py-2 rounded-full hover:bg-cyan-700 transition duration-300">Econometrics / Regression Analysis</span>
+                    <span class="bg-gray-700 text-sm font-medium px-4 py-2 rounded-full hover:bg-cyan-700 transition duration-300">Time-Series Modeling / Anomaly Detection</span>
+                    <span class="bg-gray-700 text-sm font-medium px-4 py-2 rounded-full hover:bg-cyan-700 transition duration-300">Feature Engineering</span>
+                </div>
+
+                <!-- Skill Category 4: Cloud & MLOps -->
+                <h3 class="text-xl font-semibold mb-4 text-cyan-400">Cloud & MLOps</h3>
+                <div class="flex flex-wrap gap-3 mb-8">
+                    <span class="bg-gray-700 text-sm font-medium px-4 py-2 rounded-full hover:bg-cyan-700 transition duration-300">Microsoft Azure</span>
+                    <span class="bg-gray-700 text-sm font-medium px-4 py-2 rounded-full hover:bg-cyan-700 transition duration-300">AWS (EC2, Glue, Athena, S3)</span>
+                    <span class="bg-gray-700 text-sm font-medium px-4 py-2 rounded-full hover:bg-cyan-700 transition duration-300">Terraform / Jenkins / CI/CD</span>
+                    <span class="bg-gray-700 text-sm font-medium px-4 py-2 rounded-full hover:bg-cyan-700 transition duration-300">Docker / MLflow / FastAPI</span>
+                </div>
+
+                <!-- Skill Category 5: Big Data & Distributed Systems -->
+                <h3 class="text-xl font-semibold mb-4 text-cyan-400">Big Data & Distributed Systems</h3>
+                <div class="flex flex-wrap gap-3 mb-8">
+                    <span class="bg-gray-700 text-sm font-medium px-4 py-2 rounded-full hover:bg-cyan-700 transition duration-300">Spark / Databricks / Hadoop</span>
+                    <span class="bg-gray-700 text-sm font-medium px-4 py-2 rounded-full hover:bg-cyan-700 transition duration-300">ETL Pipelines / Distributed Training</span>
+                    <span class="bg-gray-700 text-sm font-medium px-4 py-2 rounded-full hover:bg-cyan-700 transition duration-300">Resource Scheduling</span>
+                </div>
+
+                <!-- Skill Category 6: Tools & Systems -->
+                <h3 class="text-xl font-semibold mb-4 text-cyan-400">Tools & Systems</h3>
+                <div class="flex flex-wrap gap-3 mb-8">
+                    <span class="bg-gray-700 text-sm font-medium px-4 py-2 rounded-full hover:bg-cyan-700 transition duration-300">Prometheus / Grafana / Telemetry Analysis</span>
+                    <span class="bg-gray-700 text-sm font-medium px-4 py-2 rounded-full hover:bg-cyan-700 transition duration-300">Debugging Tools / Perf</span>
+                    <span class="bg-gray-700 text-sm font-medium px-4 py-2 rounded-full hover:bg-cyan-700 transition duration-300">REST APIs / Linux / Windows</span>
+                    <span class="bg-gray-700 text-sm font-medium px-4 py-2 rounded-full hover:bg-cyan-700 transition duration-300">Git</span>
+                </div>
+
+                <!-- Skill Category 7: Core Skills -->
+                <h3 class="text-xl font-semibold mb-4 text-cyan-400">Core Skills</h3>
+                <div class="flex flex-wrap gap-3">
+                    <span class="bg-gray-700 text-sm font-medium px-4 py-2 rounded-full hover:bg-cyan-700 transition duration-300">Software Engineering</span>
+                    <span class="bg-gray-700 text-sm font-medium px-4 py-2 rounded-full hover:bg-cyan-700 transition duration-300">Data Structures & Algorithms</span>
+                    <span class="bg-gray-700 text-sm font-medium px-4 py-2 rounded-full hover:bg-cyan-700 transition duration-300">Computer Architecture</span>
+                    <span class="bg-gray-700 text-sm font-medium px-4 py-2 rounded-full hover:bg-cyan-700 transition duration-300">Operating Systems / Computer Science</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 6. Publications & Achievements Section -->
+        <section id="publications" class="py-20 border-t border-gray-800">
+            <h2 class="text-4xl font-bold mb-12 text-center text-white">Publications & Achievements</h2>
+
+            <div class="max-w-4xl mx-auto space-y-6">
+
+                <!-- Publication 1 -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-xl transition duration-300 card-hover border-l-4 border-cyan-500">
+                    <div class="flex justify-between items-start mb-1">
+                        <p class="text-lg font-semibold text-gray-200">
+                            Anomaly Activity Detection on Real-Time Surveillance Videos with Deep Learning
+                        </p>
+                        <span class="text-md font-medium text-gray-400">January 2024</span>
+                    </div>
+                    <p class="text-sm text-gray-400">Published in IJIRCCE Journal</p>
+                </div>
+
+                <!-- Publication 2 -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-xl transition duration-300 card-hover border-l-4 border-cyan-500">
+                    <div class="flex justify-between items-start mb-1">
+                        <p class="text-lg font-semibold text-gray-200">
+                            Women Security System using AI
+                        </p>
+                        <span class="text-md font-medium text-gray-400">December 2019</span>
+                    </div>
+                    <p class="text-sm text-gray-400">Presented at National Conference on Emerging Technologies</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 7. Contact Section (Revised to match user image UI) -->
+        <section id="contact" class="py-20 border-t border-gray-800">
+            <div class="max-w-5xl mx-auto px-4">
+                <h2 class="text-5xl font-extrabold mb-4 text-center text-white">Contact</h2>
+                <h3 class="text-3xl font-light mb-6 text-center text-[#2DD4BF]">I'd Love To Hear From You.</h3>
+                
+                <p class="text-center text-lg text-gray-400 max-w-2xl mx-auto mb-16">
+                    Feel free to reach out to me for any inquiries, collaboration opportunities, or if you need assistance with AI/ML systems, MLOps, or compiler development projects. I'm always open to discussing new ideas and challenges.
+                </p>
+
+                <!-- Three Contact Cards Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <!-- Card 1: Location -->
+                    <div class="contact-card-bg p-8 rounded-xl shadow-2xl text-center transition duration-300 hover:shadow-cyan-500/30">
+                        <!-- Location Icon (using Lucide icon via SVG) -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-[#2DD4BF] mx-auto mb-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <h4 class="text-xl font-semibold text-gray-200 mb-2">Where to find me</h4>
+                        <p class="text-lg text-gray-400">Buffalo, NY</p>
+                    </div>
+
+                    <!-- Card 2: Email -->
+                    <div class="contact-card-bg p-8 rounded-xl shadow-2xl text-center transition duration-300 hover:shadow-cyan-500/30">
+                        <!-- Mail Icon (using Lucide icon via SVG) -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-[#2DD4BF] mx-auto mb-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        <h4 class="text-xl font-semibold text-gray-200 mb-2">Email Me At</h4>
+                        <p class="text-lg text-gray-400">saijobs1905@gmail.com</p>
+                    </div>
+
+                    <!-- Card 3: Call -->
+                    <div class="contact-card-bg p-8 rounded-xl shadow-2xl text-center transition duration-300 hover:shadow-cyan-500/30">
+                        <!-- Phone Icon (using Lucide icon via SVG) -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-[#2DD4BF] mx-auto mb-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6.7-6.7A19.79 19.79 0 0 1 2 4.18V2.82c0-.39.14-.77.38-1.06l2.13-2.67A2 2 0 0 1 6.84 0h3.53a2 2 0 0 1 2 1.83v2.5a.5.5 0 0 1-.16.35l-1.3 1.3a.5.5 0 0 0-.1.5l.3 1.5a14.86 14.86 0 0 0 4.3 4.3l1.5.3a.5.5 0 0 0 .5-.1l1.3-1.3a.5.5 0 0 1 .35-.16h2.5A2 2 0 0 1 22 16.92z"/></svg>
+                        <h4 class="text-xl font-semibold text-gray-200 mb-2">Call Me At</h4>
+                        <p class="text-lg text-gray-400">Phone: +17167091743</p>
+                    </div>
+
+                </div>
+                
+                <!-- Social Icons -->
+                <div class="flex justify-center space-x-6 mt-16 text-3xl">
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/sai-deshith-6085a8237/" class="text-gray-400 hover:text-[#2DD4BF] transition duration-300" title="LinkedIn: Saideshith-Linkedin">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 0-6 6v7h4v-7a2 2 0 0 1 2-2c1.1 0 2 .9 2 2v7h4v-7c0-3.3-2.7-6-6-6zM4 21h4V8H4v13zM6 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg>
+                    </a>
+                    <!-- GitHub -->
+                    <a href="https://github.com/saissd" class="text-gray-400 hover:text-[#2DD4BF] transition duration-300" title="GitHub: Saideshith-Github">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.63 0-12 5.37-12 12 0 5.31 3.43 9.79 8.21 11.38.6.11.82-.26.82-.57 0-.28-.01-1.02-.02-2.02-3.32.72-4.01-1.6-4.01-1.6-.54-1.36-1.32-1.72-1.32-1.72-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.24 1.83 1.24 1.07 1.83 2.81 1.3 3.49 1 .11-.78.42-1.3 1.77-1.6-4.66-.5-9.56-2.33-9.56-10.4 0-2.3.83-4.18 2.2-5.65-.22-.54-.95-2.69.21-5.61 0 0 1.79-.57 5.86 1.82 1.7-.47 3.53-.7 5.36-.7.01 0 3.66.23 5.36.7 4.07-2.39 5.86-1.82 5.86-1.82 1.16 2.92.43 5.07.21 5.61 1.37 1.47 2.2 3.35 2.2 5.65 0 8.08-4.9 9.88-9.58 10.39.73.63 1.43 1.87 1.43 3.77 0 2.72-.02 4.91-.02 5.58 0 .31.22.68.83.57C20.58 21.8 24 17.31 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#0d1317] border-t border-gray-800 mt-12">
+        <div class="container mx-auto px-4 py-6 text-center text-gray-500 text-sm max-w-7xl">
+            &copy; 2024 Sai Deshith Sandakacharla. All rights reserved. Built with Tailwind CSS.
+        </div>
+    </footer>
+</body>
+</html>
